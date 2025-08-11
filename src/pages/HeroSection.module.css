@@ -1,0 +1,140 @@
+/* HeroSection.module.css */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heroSection {
+  background: linear-gradient(to bottom right, #2563eb, #60a5fa); 
+  color: white;
+  text-align: center;
+  padding: 4rem 1.5rem; 
+
+
+
+  animation: fadeInUp 1s ease-out both;
+}
+
+.mainHeading {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 800; /* font-extrabold */
+
+  animation: fadeInUp 1.2s ease-out both;
+  animation-delay: 0.2s;
+}
+
+@media (min-width: 768px) {
+  .mainHeading {
+    font-size: 3rem; /* md:text-5xl */
+  }
+}
+
+.gradientHeading {
+  font-size: 2.25rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #facc15, #f97316, #ea580c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: 1rem;
+
+  animation: fadeInUp 1.4s ease-out both;
+  animation-delay: 0.4s;
+}
+
+@media (min-width: 768px) {
+  .gradientHeading {
+    font-size: 3rem;
+  }
+}
+
+.description {
+  margin-top: 1.5rem;
+  max-width: 48rem; /* max-w-3xl */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+
+
+
+
+  animation: fadeInUp 1.6s ease-out both;
+  animation-delay: 0.6s;
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 1.25rem;
+  }
+}
+
+.buttonGroup {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+
+
+
+  animation: fadeInUp 1.8s ease-out both;
+  animation-delay: 0.8s;
+}
+
+@media (min-width: 640px) {
+  .buttonGroup {
+    flex-direction: row;
+  }
+}
+
+.primaryButton {
+  background-color: #facc15;
+  color: black;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  
+}
+
+.primaryButton:hover {
+  background-color:  white;
+}
+
+.secondaryButton {
+  border: 1px solid white;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  background-color: transparent;
+}
+
+.secondaryButton:hover {
+  background-color: white;
+  color: #2563eb;
+}

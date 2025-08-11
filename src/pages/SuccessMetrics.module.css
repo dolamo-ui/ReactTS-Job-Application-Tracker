@@ -1,0 +1,89 @@
+/* SuccessMetrics.module.css */
+.successSection {
+  padding: 5rem 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.sectionHeading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.metricsGrid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .metricsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.metricItem {
+  font-size: 1rem;
+}
+
+.metricValue {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #2563eb; /* Tailwind's blue-600 */
+  margin-bottom: 0.5rem;
+}
+
+.metricLabel {
+  color: #4b5563; /* Tailwind's gray-600 */
+}
+
+.masterBox {
+  background-color: #f3f4f6; /* Tailwind's gray-100 */
+  padding: 2rem;
+  border-radius: 0.75rem;
+  max-width: 64rem; /* max-w-4xl */
+  margin: 0 auto;
+  text-align: left;
+}
+
+.masterTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.masterGrid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .masterGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.masterItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.checkIcon {
+  height: 1.75rem;
+  width: 1.75rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.itemTitle {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.itemText {
+  color: #4b5563;
+}

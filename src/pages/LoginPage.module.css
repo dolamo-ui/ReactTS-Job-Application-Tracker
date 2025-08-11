@@ -1,0 +1,149 @@
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the box */
+.box {
+  background-color: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 390px;
+  width: 100%;
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+/* Wrapper */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f3f4f6; /* gray-100 */
+  padding: 1rem;
+}
+
+/* Image Header */
+.imageHeader img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Login Form Layout */
+.loginForm {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.loginForm input {
+  padding: 0.75rem;
+  border: 1px solid #2563eb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.loginForm button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.loginForm button:hover {
+  background-color: #1e40af;
+}
+
+/* Forgot Password */
+.forgot {
+  font-size: 0.9rem;
+  color: #3b82f6;
+  text-align: center;
+}
+
+/* Register link */
+.register {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+.register a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+/* Responsive Design for larger screens */
+@media (min-width: 600px) {
+  .box {
+    max-width: 420px;
+  }
+
+  .loginForm {
+    padding: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .box {
+    max-width: 460px;
+  }
+
+  .loginForm input,
+  .loginForm button {
+    font-size: 1.05rem;
+  }
+
+  .register,
+  .forgot {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .box {
+    max-width: 500px;
+  }
+}
+
+/* Password input wrapper for the eye icon */
+.passwordWrapper {
+  position: relative;
+}
+
+.passwordWrapper input {
+  width: 100%;
+  padding-right: 3rem;
+}
+
+/* Eye Icon for show/hide password */
+.eyeIcon {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #2563eb;
+  font-size: 1.2rem;
+}

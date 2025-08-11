@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "user@example.com",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "email": "admin@example.com",
+      "password": "admin123"
+    },
+    {
+      "id": "fecf",
+      "email": "dolamo@gmail.com",
+      "password": "yefufebue"
+    },
+    {
+      "id": "4611",
+      "email": "karabo@gmail.com",
+      "password": "shdue783j"
+    },
+    {
+      "id": "c904",
+      "email": "Nyakallo@gmail.com",
+      "password": "isiocnsiancis8"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Frontend Developer",
+      "company": "Amazon",
+      "status": "applied",
+      "appliedDate": "2025-08-01",
+      "details": "React, TypeScript, REST APIs.",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "Backend Developer",
+      "company": "Google",
+      "status": "interview",
+      "appliedDate": "2025-08-03",
+      "details": "Node.js, MongoDB, GCP.",
+      "userId": "2"
+    },
+    {
+      "id": "2bb7",
+      "title": "Software Enngineer",
+      "company": "Microsoft",
+      "status": "interview",
+      "appliedDate": "2025-08-07",
+      "details": "python, machine learning",
+      "userId": "2"
+    },
+    {
+      "id": "000b",
+      "title": "App dev",
+      "company": "Facebook",
+      "status": "hired",
+      "appliedDate": "2025-08-19",
+      "details": "react, vue, javascript",
+      "userId": "c904"
+    },
+    {
+      "id": "0fea",
+      "title": "Web Dev",
+      "company": "Microsoft",
+      "status": "interview",
+      "appliedDate": "2025-08-09",
+      "details": "react , vue, javascript",
+      "userId": "c904"
+    },
+    {
+      "id": "a80b",
+      "title": "Youtube",
+      "company": "Microsoft",
+      "status": "hired",
+      "appliedDate": "2025-08-03",
+      "details": "react, vue , java",
+      "userId": "2"
+    },
+    {
+      "id": "cd25",
+      "title": "App dev",
+      "company": "code tribe",
+      "status": "hired",
+      "appliedDate": "2025-08-04",
+      "details": "react native and javascript, html, css",
+      "userId": "2"
+    }
+  ]
+}

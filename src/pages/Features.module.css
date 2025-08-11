@@ -1,0 +1,167 @@
+.section {
+  padding: 5rem 1rem;
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.iconWrapper {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  height: 5rem;
+  width: 5rem;
+  max-width: 100%;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cardText {
+  color: #4b5563;
+  font-size: 1.125rem;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+  }
+
+  .cardText {
+    font-size: 1rem;
+  }
+
+  .icon {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 375px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardText {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+/* Large Screens: Desktops, TVs */
+@media (min-width: 1280px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.35rem;
+  }
+
+  .cardTitle {
+    font-size: 1.6rem;
+  }
+
+  .cardText {
+    font-size: 1.25rem;
+  }
+
+  .icon {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .section {
+    padding: 6rem 2rem;
+  }
+
+  .container {
+    max-width: 1440px;
+  }
+
+  .title {
+    font-size: 2.75rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
