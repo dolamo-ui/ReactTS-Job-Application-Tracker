@@ -24,6 +24,11 @@
       "id": "c904",
       "email": "Nyakallo@gmail.com",
       "password": "isiocnsiancis8"
+    },
+    {
+      "id": "0c7c",
+      "email": "smith@gmail.com",
+      "password": "1nebfuew74ruj3r"
     }
   ],
   "jobs": [
@@ -40,16 +45,16 @@
       "id": "2",
       "title": "Backend Developer",
       "company": "Google",
-      "status": "interview",
+      "status": "Interview",
       "appliedDate": "2025-08-03",
       "details": "Node.js, MongoDB, GCP.",
       "userId": "2"
     },
     {
       "id": "2bb7",
-      "title": "Software Enngineer",
+      "title": "Software Engineer",
       "company": "Microsoft",
-      "status": "interview",
+      "status": "Interview",
       "appliedDate": "2025-08-07",
       "details": "python, machine learning",
       "userId": "2"
@@ -76,7 +81,7 @@
       "id": "a80b",
       "title": "Youtube",
       "company": "Microsoft",
-      "status": "hired",
+      "status": "Rejected",
       "appliedDate": "2025-08-03",
       "details": "react, vue , java",
       "userId": "2"
@@ -85,7 +90,7 @@
       "id": "cd25",
       "title": "App dev",
       "company": "code tribe",
-      "status": "hired",
+      "status": "Applied",
       "appliedDate": "2025-08-04",
       "details": "react native and javascript, html, css",
       "userId": "2"
