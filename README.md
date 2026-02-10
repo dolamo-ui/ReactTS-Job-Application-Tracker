@@ -82,7 +82,7 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/careertrack.git
+   git clone https://github.com/dolamo-ui/ReactTS-Job-Application-Tracker.git
    cd careertrack
    ```
 
@@ -400,3 +400,4 @@ Having trouble? Here's how to get help:
   [Get Started Now](https://react-ts-job-application-tracker-nu.vercel.app/) 🚀
   
 </div>
+
