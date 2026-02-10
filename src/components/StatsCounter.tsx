@@ -1,4 +1,4 @@
-// File: src/components/StatsCounter.tsx
+
 import React, { useEffect, useState, useRef } from 'react';
 
 interface StatsCounterProps {
@@ -17,7 +17,7 @@ export const StatsCounter: React.FC<StatsCounterProps> = ({ value, suffix = "" }
         if (entry.isIntersecting && !hasAnimated) {
           setHasAnimated(true);
           
-          const duration = 2000; // 2 seconds
+          const duration = 2000; 
           const steps = 60;
           const increment = value / steps;
           let current = 0;
@@ -54,4 +54,5 @@ export const StatsCounter: React.FC<StatsCounterProps> = ({ value, suffix = "" }
       {count.toLocaleString()}{suffix}
     </span>
   );
+
 };
