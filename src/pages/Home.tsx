@@ -1,4 +1,4 @@
-// File: src/pages/Home.tsx
+
 import React, { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Plus, LogOut, Home as HomeIcon, Briefcase, BarChart3, Bell, X } from 'lucide-react';
@@ -8,7 +8,7 @@ import SearchAndFilters from '../components/SearchAndFilters';
 import JobGrid from '../components/JobGrid';
 import DashboardFooter from '../components/DashboardFooter';
 
-// Types
+
 interface JobApplication {
   id: string;
   title: string;
@@ -30,7 +30,7 @@ const JobStatus = {
   HIRED: 'Hired'
 } as const;
 
-// JobModal Component
+
 const JobModal: React.FC<{
   isOpen: boolean;
   onClose: () => void;
@@ -208,7 +208,7 @@ const JobModal: React.FC<{
   );
 };
 
-// Main Home Component
+
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const [jobs, setJobs] = useState<JobApplication[]>([]);
@@ -219,7 +219,7 @@ const Home: React.FC = () => {
   const [userId, setUserId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Get userId
+  
   useEffect(() => {
     const storedUserId = localStorage.getItem('userId');
     if (!storedUserId) {
@@ -229,7 +229,7 @@ const Home: React.FC = () => {
     setUserId(storedUserId);
   }, [navigate]);
 
-  // Fetch jobs from API
+ 
   useEffect(() => {
     if (!userId) return;
 
@@ -335,7 +335,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
-      {/* Navbar */}
+     
       <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -378,13 +378,13 @@ const Home: React.FC = () => {
       </nav>
 
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24">
-        {/* Header Section with Stats */}
+       
         <header className="mb-10">
           <DashboardHeader onAddApplication={() => { setEditingJob(null); setIsModalOpen(true); }} />
           <DashboardStats stats={stats} />
         </header>
 
-        {/* Filters and Search */}
+        
         <section className="mb-8">
           <SearchAndFilters
             searchQuery={searchQuery}
@@ -395,7 +395,7 @@ const Home: React.FC = () => {
           />
         </section>
 
-        {/* Jobs Grid */}
+       
         <section>
           <JobGrid
             jobs={filteredJobs}
@@ -408,7 +408,7 @@ const Home: React.FC = () => {
         </section>
       </main>
 
-      {/* Floating Add Button for Mobile */}
+    
       <button
         onClick={() => { setEditingJob(null); setIsModalOpen(true); }}
         className="fixed bottom-6 right-6 w-14 h-14 bg-blue-600 text-white rounded-full shadow-2xl shadow-blue-500/40 flex items-center justify-center hover:bg-blue-700 hover:scale-110 active:scale-90 transition-all z-30 sm:hidden"
@@ -427,5 +427,6 @@ const Home: React.FC = () => {
     </div>
   );
 };
+
 
 export default Home;
