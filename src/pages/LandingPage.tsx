@@ -1,4 +1,4 @@
-// File: src/pages/LandingPage.tsx
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavBar from '../components/NavBar';
@@ -32,5 +32,6 @@ const LandingPage: React.FC = () => {
     </div>
   );
 };
+
 
 export default LandingPage;
