@@ -1,4 +1,4 @@
-// File: src/pages/AuthPage.tsx
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
@@ -55,7 +55,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode = 'login' }) => {
         
         console.log('Logged in as:', user);
         
-        // Success animation delay
+        
         setTimeout(() => {
           setIsLoading(false);
           navigate('/home');
@@ -88,7 +88,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode = 'login' }) => {
     setMessage('');
 
     try {
-      // Check if user already exists
+      
       const checkRes = await fetch(`${serverURL}?email=${email}`);
       const existingUsers = await checkRes.json();
 
@@ -98,7 +98,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode = 'login' }) => {
         return;
       }
 
-      // Create new user
+     
       const newUser = { email, password };
       const addRes = await fetch(serverURL, {
         method: 'POST',
@@ -111,7 +111,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode = 'login' }) => {
       if (addRes.ok) {
         const createdUser = await addRes.json();
         
-        // Auto login after registration
+      
         localStorage.setItem('userId', createdUser.id);
         localStorage.setItem('userEmail', createdUser.email);
         
@@ -144,9 +144,9 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode = 'login' }) => {
     <div className="min-h-screen bg-white overflow-hidden">
       <NavBar onSignIn={() => navigate('/login')} onStart={() => navigate('/register')} />
 
-      {/* Main Content */}
+      
       <div className="flex pt-20 overflow-hidden">
-      {/* Left Side: Illustration & Branding (Hidden on mobile) */}
+      
       <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-blue-600 to-indigo-700 p-12 flex-col justify-between text-white relative">
         <div className="relative z-10">
           <div className="flex items-center space-x-2 mb-12">
@@ -183,7 +183,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode = 'login' }) => {
           </div>
         </div>
 
-        {/* Decorative SVG Pattern */}
+       
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -196,7 +196,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode = 'login' }) => {
         </div>
       </div>
 
-      {/* Right Side: Auth Form */}
+     
       <div className="w-full lg:w-1/2 flex flex-col p-6 sm:p-12 lg:p-20 justify-center bg-white">
         <div className="max-w-md w-full mx-auto">
           <button
@@ -215,7 +215,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode = 'login' }) => {
             </p>
           </div>
 
-          {/* Toggle Tabs */}
+        
           <div className="bg-slate-100 p-1.5 rounded-2xl mb-8 flex relative">
             <div
               className={`absolute top-1.5 bottom-1.5 w-[calc(50%-6px)] bg-white rounded-xl shadow-sm transition-all duration-300 ${
@@ -372,5 +372,6 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode = 'login' }) => {
     </div>
   );
 };
+
 
 export default AuthPage;
