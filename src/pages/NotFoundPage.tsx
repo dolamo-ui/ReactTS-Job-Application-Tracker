@@ -1,8 +1,8 @@
 
-// File: src/pages/NotFoundPage.tsx
+
 import { Link, useNavigate } from "react-router-dom";
 import NavBar from "../components/NavBar";
-import "./NotFoundPage.css"; // Make sure this import path is correct
+import "./NotFoundPage.css"; 
 
 const NotFoundPage = () => {
   const navigate = useNavigate();
@@ -21,3 +21,4 @@ const NotFoundPage = () => {
 };
 
 export default NotFoundPage;
+
